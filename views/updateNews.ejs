@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>update</title>
+  </head>
+  <body>
+    <form action="/updateNews" method="post">
+      <input
+        type="text"
+        id="title"
+        name="id"
+        value="<%= data.id %>"
+      /><br /><br />
+      <label for="title">Title</label>
+      <input type="text" id="title" name="name" value="<%= data.name %>" />
+      <br />
+      <br />
+
+      <label for="description">Description</label>
+      <textarea name="description" id="description" cols="30" rows="10">
+<%= data.description %></textarea
+      >
+      <br />
+      <br />
+      <label for="author">Author</label>
+      <input type="text" id="author" name="author" value="<%= data.author %>" />
+      <br />
+      <br />
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" />
+
+      <br />
+      <br />
+      <button type="submit">Update</button>
+    </form>
+  </body>
+</html>
